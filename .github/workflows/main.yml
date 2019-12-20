@@ -13,8 +13,9 @@ jobs:
           cd "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\" 
           .\MSBuild.exe $Env:GITHUB_WORKSPACE\githus-actions-console-framework-4-6-2.sln /P:Configuration=Release
           cd \
-          mkdir temp
-          cd \temp
+          mkdir mactemp
+          cd \mactemp
+          copy $Env:GITHUB_WORKSPACE\githus-actions-console-framework-4-6-2\bin\release\*.exe
           
           
           
