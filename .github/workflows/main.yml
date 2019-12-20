@@ -22,7 +22,7 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: my-artifact
-          path: c:/temp/githus-actions-console-framework-4-6-2.zip
+          path: c:/mactemp/githus-actions-console-framework-4-6-2.zip
           
           
           
