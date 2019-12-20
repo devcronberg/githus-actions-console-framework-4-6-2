@@ -18,10 +18,7 @@ jobs:
           copy $Env:GITHUB_WORKSPACE\githus-actions-console-framework-4-6-2\bin\release\*.exe
           copy $Env:GITHUB_WORKSPACE\deploy\*.exe
           .\7za a githus-actions-console-framework-4-6-2.zip *.exe
-      - name: release        
-        uses: ncipollo/release-action@v1      
-        artifacts: "c:\\temp\\githus-actions-console-framework-4-6-2.zip"          
-        token: ${{ secrets.GITHUB_TOKEN }}      
+          .\ftp.exe -?
           
           
           
