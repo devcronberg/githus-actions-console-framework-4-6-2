@@ -18,12 +18,11 @@ jobs:
           copy $Env:GITHUB_WORKSPACE\githus-actions-console-framework-4-6-2\bin\release\*.exe
           copy $Env:GITHUB_WORKSPACE\deploy\*.exe
           .\7za.exe a  githus-actions-console-framework-4-6-2.zip *.exe
-      - name: Upload to release
-        uses: JasonEtco/upload-to-release@master
+      - name: Upload
+      - uses: actions/upload-artifact@v1
         with:
-          args: githus-actions-console-framework-4-6-2.zip
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}          
+          name: my-artifact
+          path: c:/temp/githus-actions-console-framework-4-6-2.zip
           
           
           
