@@ -19,7 +19,7 @@ jobs:
           copy $Env:GITHUB_WORKSPACE\deploy\*.exe
           .\7za.exe a  githus-actions-console-framework-4-6-2.zip *.exe
       - name: Upload
-      - uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v1
         with:
           name: my-artifact
           path: c:/temp/githus-actions-console-framework-4-6-2.zip
