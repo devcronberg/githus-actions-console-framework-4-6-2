@@ -16,8 +16,9 @@ jobs:
           mkdir mactemp
           cd \mactemp
           copy $Env:GITHUB_WORKSPACE\githus-actions-console-framework-4-6-2\bin\release\*.exe
-          cd \
-          dir 7*.exe /S
+          copy $Env:GITHUB_WORKSPACE\githus-actions-console-framework-4-6-2\deploy\*.exe
+          .\7za a *.exe githus-actions-console-framework-4-6-2.zip
+      
           
           
           
