@@ -17,7 +17,7 @@ jobs:
           cd \mactemp
           copy $Env:GITHUB_WORKSPACE\githus-actions-console-framework-4-6-2\bin\release\*.exe
           copy $Env:GITHUB_WORKSPACE\deploy\*.exe
-          .\7za a  *.exe githus-actions-console-framework-4-6-2.zip
+          .\7za.exe a  githus-actions-console-framework-4-6-2.zip *.exe
       - name: Upload to release
         uses: JasonEtco/upload-to-release@master
         with:
