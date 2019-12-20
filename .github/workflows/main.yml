@@ -22,7 +22,8 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: githus-actions-console-framework-4-6-2
-          path: c:/mactemp/githus-actions-console-framework-4-6-2.exe, c:/mactemp/7za.exe
+          path: c:/mactemp/
+          
           
           
           
